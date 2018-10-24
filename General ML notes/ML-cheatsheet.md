@@ -1,6 +1,7 @@
 # ML Cheat-sheet - short description of important concepts
 
-##Bias and Variance
+## Bias and Variance
+
 The bias-variance tradeoff is a problem in supervised learning. 
 1. Bias: is an error from erroneous assumptions in the learning algorithm. (difference between expected and actual value)
 2. Variance: is an error from sensitivity to small fluctuation in the training set. This can cause an algorithm to model the random noise in the training data 
@@ -14,7 +15,8 @@ we’ll say the figure on the left shows an instance of underfitting—in which 
 
 
 
-##Regularization 
+## Regularization 
+
 This technique is used to avoid overfitting our model. The overfitting problem can be cause by excessive number of parameter to estimate. The idea is to constrain some of these coefficients in order to shirk them towards zero. To do this we have an additional parameter called Lambda that will decide how much we want to penalise the flexibility of our model and prevents coefficients from rising too high. 
 
 **Ridge L2**<br/>
@@ -29,21 +31,24 @@ Why it is good? This reduces the variance of the model, without substantial incr
 
 
 
-##Precision and Recall 
+## Precision and Recall 
+
 1. Precision (also called positive predictive value) is the fraction of relevant instances among the retrieved instances.
 2. Recall (also known as sensitivity) is the fraction of relevant instances that have been retrieved over the total amount of relevant instances.
 <img src="images/precision.jpg" width="300">
 
 
 
-##Type 1 and Type 2 errors 
+## Type 1 and Type 2 errors 
+
 1. Type1 = \alpha = P(Rejecting the null hypothesis | when it is true)
 2. Type2 = \beta = P(fail to reject the null hypothesis | when it is false)
 <img src="images/type1and2.png" width="300">
 
 
 
-##Gradient Descent 
+## Gradient Descent 
+
 Gradient descent is iterative optimization algorithm for finding the minimum of a function. To find a local minimum of a function using gradient descent, one takes steps proportional to the negative of the gradient (or approximate gradient) of the function at the current point.
 <img src="images/gradient1.png" style="width:300px">
 
@@ -51,7 +56,8 @@ The learning rate alpha is going to give you the speed to reach the local/global
 <img src="images/gradient2.png" style="width:300px">
 The assumption is that the partial derivative will decrease in time so even if the learning rate is fixed. 
 
-##Activation function : why ReLU is better than Sigmoid? 
+## Activation function : why ReLU is better than Sigmoid? 
+
 [Reference1](https://towardsdatascience.com/activation-functions-neural-networks-1cbd9f8d91d6)<br/>
 [Reference2](https://stats.stackexchange.com/questions/126238/what-are-the-advantages-of-relu-over-sigmoid-function-in-deep-neural-networks)
 
@@ -72,7 +78,8 @@ The issue with ReLU is that all the negative values become zero immediately whic
 <img src="images/ReLU.png" width='450'>
 
 
-##Evaluate of the Model
+## Evaluate of the Model
+
 Good practice to avoid overfitting is to divide your dataset into train, validation and test (terminology can vary). Example: 
 
 1. Split your data into training and testing (80/20 is indeed a good starting point)
